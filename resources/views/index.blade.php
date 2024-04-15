@@ -6,6 +6,7 @@
 
 <div id="search-container" class="col-md-12">
     <h1>Busque uma mesa</h1>
+    <img src="banner.webp" alt="">
     <form action="">
         <input type="text" id="search" name="search" class="form-control" placeholder="Procurar...">
     </form>

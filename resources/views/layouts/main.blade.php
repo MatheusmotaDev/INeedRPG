@@ -59,8 +59,24 @@
     </header>
 
 
+    
 
-        @yield('content')
+
+    <main>
+            <div class="container-fluid">
+                <div class="row">
+                @if (session('msg'))
+                 <div class="msg">{{ session('msg') }}</div>
+                @endif
+
+                @yield('content')
+                </div>
+            </div>
+        </main>
+
+
+
+
         <footer>
             <p>Feito por Matheus Alves &copy; 2024</p>
         </footer>
