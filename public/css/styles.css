@@ -16,11 +16,11 @@ header{
 
 
 .row{
-    margin: 0;
+    margin: 80;
 }
 
 .container-fluid {
-    padding: 199990;
+    margin: 10;
 }
 
 .btn-primary{
@@ -72,6 +72,7 @@ header{
     width: 50%;
     margin: 0 auto;
 }
+
 
 #mesas-container{
     padding: 50px;
@@ -159,3 +160,4 @@ footer p {
     text-align: center;
     padding: 10px;
 }
+
