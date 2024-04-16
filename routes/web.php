@@ -19,5 +19,9 @@ Route::get('/', [RpController::class, 'index']);
 
 Route::get('/mesas/create', [RpController::class, 'create']);
 
+Route::get('/mesas/{id}', [RpController::class, 'show']);
+
 Route::post('/mesas', [RpController::class, 'store']);
+
+
 
