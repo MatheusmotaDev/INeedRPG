@@ -32,26 +32,19 @@ header{
     background-color:#c28008 ;
 }
 
-#navbar img{
-    width: 60px;
-}
-
-#navbar{
-    justify-content: space-between;
+#navbar {
     background-color: #000000;
     padding: 8px 0;
 }
 
-#navbar a{
+#navbar a {
     font-size: 14px;
     color: #ccc;
-
 }
 
-#navbar a:hover{
+#navbar a:hover {
     color: #f2a340;
 }
-
 
 #search-container{
     background-image: url("../img/banner.webp");
@@ -74,15 +67,15 @@ header{
 }
 
 
-#mesas-container{
+#tables-container{
     padding: 50px;
 }
 
-#mesas-container h2{
+#tables-container h2{
     margin-bottom: 100px;
 }
 
-#mesas-container .subtitle {
+#tables-container .subtitle {
     color: #757575;
 }
 
@@ -90,7 +83,7 @@ header{
     display: flex;
 }
 
-#mesas-container .card{
+#tables-container .card{
     flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
@@ -98,7 +91,7 @@ header{
     margin: .5px;
 }
 
-#mesas-container img {
+#tables-container img {
     max-height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -195,7 +188,7 @@ footer p {
     margin-right: 5px;
 }
 
-#info-container #mesa-submit{
+#info-container #table-submit{
     margin: 20px 0;
 
 }

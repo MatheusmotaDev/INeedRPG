@@ -6,7 +6,7 @@
 
 <div id="event-create-container" class="col-md6 offset-md-3">
     <h1>Crie sua mesa</h1>
-    <form action="/mesas" method="POST" enctype="multipart/form-data">
+    <form action="/tables" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="image">Imagem da mesa:</label>

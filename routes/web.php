@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TableController;
 
 /*
 |--------------------------------------------------------------------------
@@ -8,20 +9,15 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
+| routes are loaded by the RouteServiceProvider and assigned to the "web"
+| middleware group. Now create something great!
 |
 */
 
-use App\Http\Controllers\RpController;
+Route::get('/', [TableController::class, 'index']);
 
-Route::get('/', [RpController::class, 'index']);
+Route::get('/tables/create', [TableController::class, 'create']);
 
-Route::get('/mesas/create', [RpController::class, 'create']);
+Route::get('/tables/{id}', [TableController::class, 'show']);
 
-Route::get('/mesas/{id}', [RpController::class, 'show']);
-
-Route::post('/mesas', [RpController::class, 'store']);
-
-
-
+Route::post('/tables', [TableController::class, 'store']);

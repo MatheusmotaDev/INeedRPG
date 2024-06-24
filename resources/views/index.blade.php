@@ -12,25 +12,22 @@
     </form>
 </div>
 
-<div id="mesas-container" class="col-md-12">
+<div id="tables-container" class="col-md-12">
     <h2>Próximas mesas</h2>
-    <p class="subtitle" >Veja as mesas de RPG disponíveis</p>
+    <p class="subtitle">Veja as mesas de RPG disponíveis</p>
     <div id="cards-container" class="row">
-        @foreach($mesas as $mesa)
-    <div class="card col-md-3">
-        <img src="/img/mesas/{{ $mesa->image }}" class="teste" alt="{{ $mesa->title }}">
-        <div class="card-body">
-            <p class="card-date">20-20-2000</p>
-            <h5 class="card-title">{{ $mesa->title }}</h5>
-            <p class="card-participants">X pariticipantes</p>
-            <a href="/mesas/{{ $mesa->id }}" class="btn btn-primary">Saber mais</a>
-
+        @foreach($tables as $table)
+        <div class="card col-md-3">
+            <img src="/img/tables/{{ $table->image }}" class="teste" alt="{{ $table->title }}">
+            <div class="card-body">
+                <p class="card-date">20-20-2000</p>
+                <h5 class="card-title">{{ $table->title }}</h5>
+                <p class="card-participants">X participantes</p>
+                <a href="/tables/{{ $table->id }}" class="btn btn-primary">Saber mais</a>
+            </div>
         </div>
-    </div>
         @endforeach
     </div>
 </div>
-                
 
 @endsection
-   
